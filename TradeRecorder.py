@@ -8,13 +8,13 @@ class TradeRecorder:
         self.timestamp = datetime.time(timestamp)
         self.listoftrades = listoftrades
 
-        #function to record all trades
+        #method to record all trades
         def recordTrades(self):
             listoftrades = []
             listoftrades.extend([[self.timestamp, self.price,self.quantity, self.buyorsellindicator]])
             print(listoftrades[0])
 
-        #function to get trades in last 5 minutes
+        #method to get trades in last 5 minutes
         def tradesinlastfiveminutes(self):
             listoftradesinlast5minutes =[]
             timenow = datetime.datetime.now()
